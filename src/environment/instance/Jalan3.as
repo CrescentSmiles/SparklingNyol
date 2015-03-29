@@ -15,11 +15,11 @@ package environment.instance
 	 * ...
 	 * @author zain
 	 */
-	public class Jalan1 extends Sprite implements IEnvironment 
+	public class Jalan3 extends Sprite implements IEnvironment 
 	{
 		/** list asset */
-		[Embed(source="../../../assets/environment/Jalan1_1.jpg")]
-		public static const Jalan1_1:Class;
+		[Embed(source="../../../assets/environment/Jalan3_1.jpg")]
+		public static const Jalan3_1:Class;
 		
 		[Embed(source="../../../assets/ui/LeafArrowUp.png")]
 		public static const LeafArrowUp:Class;
@@ -37,13 +37,12 @@ package environment.instance
 		private var mcBg:MovieClip;
 		
 		/** portal */
-		private var pbHome:PortalButton;
 		private var pbJalan2:PortalButton;
 		
-		public function Jalan1(gamePage:GamePage)
+		public function Jalan3(gamePage:GamePage)
 		{
 			super();
-			Config.log("[Environment] Jalan1");
+			Config.log("[Environment] Jalan3");
 			
 			this.gamePage = gamePage;
 			if (stage) {
@@ -57,38 +56,24 @@ package environment.instance
 			removeEventListener(Event.ADDED_TO_STAGE, initialize);
 			
 			/** initialize each object */
-			mcBg = new MovieClip(Assets.getTextures("Jalan1_1"));
-			
-			pbHome = new PortalButton();
-			pbHome.label = "slide to go";
-			pbHome.x = 1640;
-			pbHome.y = 600;
-			pbHome.styleProvider = null;
-			pbHome.defaultSkin = new Image(Assets.getTexture("LeafArrowUp"));
-			pbHome.downSkin = new Image(Assets.getTexture("LeafArrowDown"));
-			pbHome.addEventListener(Event.TRIGGERED, gotoHome);
+			mcBg = new MovieClip(Assets.getTextures("Jalan3_1"));
 			
 			pbJalan2 = new PortalButton();
 			pbJalan2.label = "slide to go";
-			pbJalan2.x = -32.9;
-			pbJalan2.y = 616.4;
+			pbJalan2.x = 1640;
+			pbJalan2.y = 800;
 			pbJalan2.rotation = 0.26;
 			pbJalan2.styleProvider = null;
-			pbJalan2.defaultSkin = new Image(Assets.getTexture("LeafArrow2Up"));
-			pbJalan2.downSkin = new Image(Assets.getTexture("LeafArrow2Down"));
+			pbJalan2.defaultSkin = new Image(Assets.getTexture("LeafArrowUp"));
+			pbJalan2.downSkin = new Image(Assets.getTexture("LeafArrowDown"));
 			pbJalan2.addEventListener(Event.TRIGGERED, gotoJalan2);
 			
 			/** addChild */
 			addChild(mcBg);
-			addChild(pbHome);
 			addChild(pbJalan2);
 		}
 		
 		/* Portal */
-		private function gotoHome(e:Event):void {
-			gamePage.changeEnvironment(EnvironmentLocation.NYOL_HOME);
-		}
-		
 		private function gotoJalan2(e:Event):void {
 			gamePage.changeEnvironment(EnvironmentLocation.JALAN2);
 		}

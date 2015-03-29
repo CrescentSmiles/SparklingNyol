@@ -15,11 +15,14 @@ package environment.instance
 	 * ...
 	 * @author zain
 	 */
-	public class Jalan1 extends Sprite implements IEnvironment 
+	public class Jalan2 extends Sprite implements IEnvironment 
 	{
 		/** list asset */
-		[Embed(source="../../../assets/environment/Jalan1_1.jpg")]
-		public static const Jalan1_1:Class;
+		[Embed(source="../../../assets/environment/Jalan2_1.jpg")]
+		public static const Jalan2_1:Class;
+		
+		[Embed(source="../../../assets/environment/Jalan2_2.png")]
+		public static const Jalan2_2:Class;
 		
 		[Embed(source="../../../assets/ui/LeafArrowUp.png")]
 		public static const LeafArrowUp:Class;
@@ -35,15 +38,16 @@ package environment.instance
 		
 		/** environment layer */
 		private var mcBg:MovieClip;
+		private var mcFg:MovieClip;
 		
 		/** portal */
-		private var pbHome:PortalButton;
-		private var pbJalan2:PortalButton;
+		private var pbJalan1:PortalButton;
+		private var pbJalan3:PortalButton;
 		
-		public function Jalan1(gamePage:GamePage)
+		public function Jalan2(gamePage:GamePage)
 		{
 			super();
-			Config.log("[Environment] Jalan1");
+			Config.log("[Environment] Jalan2");
 			
 			this.gamePage = gamePage;
 			if (stage) {
@@ -57,40 +61,43 @@ package environment.instance
 			removeEventListener(Event.ADDED_TO_STAGE, initialize);
 			
 			/** initialize each object */
-			mcBg = new MovieClip(Assets.getTextures("Jalan1_1"));
+			mcBg = new MovieClip(Assets.getTextures("Jalan2_1"));
 			
-			pbHome = new PortalButton();
-			pbHome.label = "slide to go";
-			pbHome.x = 1640;
-			pbHome.y = 600;
-			pbHome.styleProvider = null;
-			pbHome.defaultSkin = new Image(Assets.getTexture("LeafArrowUp"));
-			pbHome.downSkin = new Image(Assets.getTexture("LeafArrowDown"));
-			pbHome.addEventListener(Event.TRIGGERED, gotoHome);
+			mcFg = new MovieClip(Assets.getTextures("Jalan2_2"));
 			
-			pbJalan2 = new PortalButton();
-			pbJalan2.label = "slide to go";
-			pbJalan2.x = -32.9;
-			pbJalan2.y = 616.4;
-			pbJalan2.rotation = 0.26;
-			pbJalan2.styleProvider = null;
-			pbJalan2.defaultSkin = new Image(Assets.getTexture("LeafArrow2Up"));
-			pbJalan2.downSkin = new Image(Assets.getTexture("LeafArrow2Down"));
-			pbJalan2.addEventListener(Event.TRIGGERED, gotoJalan2);
+			pbJalan1 = new PortalButton();
+			pbJalan1.label = "slide to go";
+			pbJalan1.x = 1640;
+			pbJalan1.y = 600;
+			pbJalan1.styleProvider = null;
+			pbJalan1.defaultSkin = new Image(Assets.getTexture("LeafArrowUp"));
+			pbJalan1.downSkin = new Image(Assets.getTexture("LeafArrowDown"));
+			pbJalan1.addEventListener(Event.TRIGGERED, gotoJalan1);
+			
+			pbJalan3 = new PortalButton();
+			pbJalan3.label = "slide to go";
+			pbJalan3.x = -32.9;
+			pbJalan3.y = 616.4;
+			pbJalan3.rotation = 0.26;
+			pbJalan3.styleProvider = null;
+			pbJalan3.defaultSkin = new Image(Assets.getTexture("LeafArrow2Up"));
+			pbJalan3.downSkin = new Image(Assets.getTexture("LeafArrow2Down"));
+			pbJalan3.addEventListener(Event.TRIGGERED, gotoJalan3);
 			
 			/** addChild */
 			addChild(mcBg);
-			addChild(pbHome);
-			addChild(pbJalan2);
+			addChild(mcFg);
+			addChild(pbJalan1);
+			addChild(pbJalan3);
 		}
 		
 		/* Portal */
-		private function gotoHome(e:Event):void {
-			gamePage.changeEnvironment(EnvironmentLocation.NYOL_HOME);
+		private function gotoJalan3(e:Event):void {
+			gamePage.changeEnvironment(EnvironmentLocation.JALAN3);
 		}
 		
-		private function gotoJalan2(e:Event):void {
-			gamePage.changeEnvironment(EnvironmentLocation.JALAN2);
+		private function gotoJalan1(e:Event):void {
+			gamePage.changeEnvironment(EnvironmentLocation.JALAN1);
 		}
 		
 		/* INTERFACE environment.IEnvironment */

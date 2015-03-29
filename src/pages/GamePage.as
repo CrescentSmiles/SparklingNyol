@@ -5,6 +5,8 @@ package pages
 	import environment.EnvironmentLocation;
 	import environment.IEnvironment;
 	import environment.instance.Jalan1;
+	import environment.instance.Jalan2;
+	import environment.instance.Jalan3;
 	import environment.instance.NyolHome;
 	import flash.geom.Point;
 	import pages.IPage;
@@ -82,6 +84,12 @@ package pages
 						break;
 					case EnvironmentLocation.NYOL_HOME:
 						currentEnvironment = new NyolHome(this);
+						break;
+					case EnvironmentLocation.JALAN2:
+						currentEnvironment = new Jalan2(this);
+						break;
+					case EnvironmentLocation.JALAN3:
+						currentEnvironment = new Jalan3(this);
 						break;
 					default:
 						Config.log("unusual changeEnvironment: default");

@@ -6,7 +6,7 @@ package
 	import starling.animation.*;
 	import starling.display.*;
 	import starling.events.*;
-
+	import starling.display.Sprite;
 	
 	
 	/**
