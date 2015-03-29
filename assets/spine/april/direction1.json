@@ -1,0 +1,481 @@
+{
+"skeleton": { "hash": "HBhgHowV6UOTn7fkmjNzsth+30g", "spine": "2.1.18", "width": 109.37, "height": 241.23, "images": "" },
+"bones": [
+	{ "name": "hip", "y": 75.37 },
+	{ "name": "body", "parent": "hip", "length": 41.23, "x": 0.73, "y": 1.28, "rotation": 92.6 },
+	{ "name": "lThigh", "parent": "hip", "length": 36.58, "x": 8.16, "y": -6.82, "rotation": -93.63 },
+	{ "name": "rThigh", "parent": "hip", "length": 35.98, "x": -7.38, "y": -5.47, "rotation": -115.28 },
+	{ "name": "hijab3", "parent": "body", "length": 47.01, "x": 35.33, "y": -16.72, "rotation": 111.48 },
+	{ "name": "hijab5", "parent": "body", "length": 32.91, "x": 34.44, "y": -24.85, "rotation": -141.84 },
+	{ "name": "lArm", "parent": "body", "length": 28.99, "x": 26.01, "y": -15.73, "rotation": -151.81 },
+	{ "name": "lCalf", "parent": "lThigh", "length": 32.57, "x": 38.26, "y": 0.04, "rotation": 50.98 },
+	{ "name": "neck", "parent": "body", "length": 9.82, "x": 36.16, "y": -0.28, "rotation": 3.15 },
+	{ "name": "rArm", "parent": "body", "length": 24.39, "x": 29.23, "y": 10.51, "rotation": 173.7 },
+	{ "name": "rCalf", "parent": "rThigh", "length": 33.25, "x": 35.22, "y": -0.19, "rotation": 52.06 },
+	{ "name": "skirt", "parent": "body", "length": 26.04, "x": 3.05, "y": 1.32, "rotation": 177.73 },
+	{ "name": "head", "parent": "neck", "length": 90.24, "x": 7.8, "y": 0.18, "rotation": -3.15 },
+	{ "name": "lFoot", "parent": "lCalf", "length": 23.66, "x": 36.63, "y": -0.22, "rotation": -111.86 },
+	{ "name": "lForearm", "parent": "lArm", "length": 23.1, "x": 28.17, "y": -0.26, "rotation": -36.03 },
+	{ "name": "rFoot", "parent": "rCalf", "length": 22.1, "x": 33.25, "y": -0.12, "rotation": -93.17 },
+	{ "name": "rForearm", "parent": "rArm", "length": 21.61, "x": 24.39, "y": -0.12, "rotation": -23.03 },
+	{ "name": "hijab1", "parent": "head", "length": 26.92, "x": 69.63, "y": 30.94, "rotation": 152.89 },
+	{ "name": "lHand", "parent": "lForearm", "length": 10.27, "x": 23.1, "y": 0.05, "rotation": -3.17 },
+	{ "name": "rHand", "parent": "rForearm", "length": 8.34, "x": 21.61, "y": -0.09, "rotation": -4.95 },
+	{ "name": "hijab2", "parent": "hijab1", "length": 64.23, "x": 40.76, "y": 3.99, "rotation": 40.37 },
+	{ "name": "hijab4", "parent": "hijab2", "length": 76.08, "x": -18.99, "y": 9.64, "rotation": -0.79 }
+],
+"slots": [
+	{ "name": "april south-west", "bone": "hip", "additive": true },
+	{ "name": "hijab5", "bone": "hijab5", "attachment": "hijab5" },
+	{ "name": "hijab4", "bone": "hijab4", "attachment": "hijab4" },
+	{ "name": "rHand", "bone": "rHand", "attachment": "rHand" },
+	{ "name": "rForeArm", "bone": "rForearm", "attachment": "rForeArm" },
+	{ "name": "rArm", "bone": "rArm", "attachment": "rArm" },
+	{ "name": "rFoot", "bone": "rFoot", "attachment": "rFoot" },
+	{ "name": "rCalf", "bone": "rCalf", "attachment": "rCalf" },
+	{ "name": "rThigh", "bone": "rThigh", "attachment": "rThigh" },
+	{ "name": "lFoot", "bone": "lFoot", "attachment": "lFoot" },
+	{ "name": "lCalf", "bone": "lCalf", "attachment": "lCalf" },
+	{ "name": "lThigh", "bone": "lThigh", "attachment": "lThigh" },
+	{ "name": "body", "bone": "body", "attachment": "body" },
+	{ "name": "skirt", "bone": "skirt", "attachment": "skirt" },
+	{ "name": "lHand", "bone": "lHand", "attachment": "lHand" },
+	{ "name": "lForearm", "bone": "lForearm", "attachment": "lForearm" },
+	{ "name": "lArm", "bone": "lArm", "attachment": "lArm" },
+	{ "name": "hijab3", "bone": "hijab3", "attachment": "hijab3" },
+	{ "name": "head", "bone": "head", "attachment": "head" },
+	{ "name": "hijab2", "bone": "hijab2", "attachment": "hijab2" },
+	{ "name": "hijab1", "bone": "hijab1", "attachment": "hijab1" }
+],
+"skins": {
+	"default": {
+		"body": {
+			"body": { "x": 23.34, "y": -0.18, "rotation": -90.45, "width": 60, "height": 51 }
+		},
+		"head": {
+			"head": { "x": 45.45, "y": -6.1, "rotation": -92.6, "width": 104, "height": 116 }
+		},
+		"hijab1": {
+			"hijab1": { "x": 23.36, "y": 5.43, "rotation": 114.49, "width": 29, "height": 65 }
+		},
+		"hijab2": {
+			"hijab2": { "x": 24.35, "y": 16.83, "rotation": 74.11, "width": 56, "height": 104 }
+		},
+		"hijab3": {
+			"hijab3": { "x": 24.06, "y": 0.05, "rotation": 155.9, "width": 83, "height": 47 }
+		},
+		"hijab4": {
+			"hijab4": { "x": 43.88, "y": 4.06, "rotation": 74.91, "width": 47, "height": 77 }
+		},
+		"hijab5": {
+			"hijab5": { "x": 3.92, "y": -11.35, "rotation": 49.23, "width": 71, "height": 45 }
+		},
+		"lArm": {
+			"lArm": { "x": 5.89, "y": 5.92, "rotation": 59.2, "width": 34, "height": 48 }
+		},
+		"lCalf": {
+			"lCalf": { "x": 12.32, "y": 3.02, "rotation": 42.64, "width": 63, "height": 52 }
+		},
+		"lFoot": {
+			"lFoot": { "x": 14.17, "y": -4.57, "rotation": 153.68, "width": 56, "height": 40 }
+		},
+		"lForearm": {
+			"lForearm": { "x": 6.85, "y": -0.65, "rotation": 96.02, "width": 31, "height": 40 }
+		},
+		"lHand": {
+			"lHand": { "x": 3.68, "y": 0.58, "rotation": 99.2, "width": 34, "height": 35 }
+		},
+		"lThigh": {
+			"lThigh": { "x": 17.76, "y": 8.23, "scaleX": 1.037, "rotation": 93.63, "width": 58, "height": 53 }
+		},
+		"rArm": {
+			"rArm": { "x": 7.24, "y": -0.21, "rotation": 93.68, "width": 25, "height": 40 }
+		},
+		"rCalf": {
+			"rCalf": { "x": 9.41, "y": 2.06, "rotation": 63.22, "width": 54, "height": 53 }
+		},
+		"rFoot": {
+			"rFoot": { "x": 7.51, "y": -2.94, "rotation": 156.4, "width": 50, "height": 36 }
+		},
+		"rForeArm": {
+			"rForeArm": { "x": 6.37, "y": -0.87, "rotation": 116.71, "width": 33, "height": 39 }
+		},
+		"rHand": {
+			"rHand": { "x": 2.9, "y": 0.32, "rotation": 121.66, "width": 34, "height": 33 }
+		},
+		"rThigh": {
+			"rThigh": { "x": 16.1, "y": -1.72, "rotation": 115.28, "width": 51, "height": 59 }
+		},
+		"skirt": {
+			"skirt": { "x": 13.8, "y": 1.78, "rotation": 91.81, "width": 70, "height": 41 }
+		}
+	}
+},
+"animations": {
+	"run": {
+		"bones": {
+			"rFoot": {
+				"rotate": [
+					{ "time": 0, "angle": 0.8 },
+					{ "time": 0.2333, "angle": -13.16 },
+					{ "time": 0.4666, "angle": -2.05 },
+					{ "time": 0.7, "angle": -8.99 },
+					{ "time": 0.9333, "angle": 0.8 }
+				]
+			},
+			"rArm": {
+				"rotate": [
+					{ "time": 0, "angle": -336.53 },
+					{ "time": 0.4666, "angle": -7.34 },
+					{ "time": 0.9333, "angle": -336.53 }
+				]
+			},
+			"head": {
+				"rotate": [
+					{ "time": 0, "angle": -10.57 }
+				],
+				"translate": [
+					{ "time": 0, "x": -0.99, "y": 0.1 },
+					{ "time": 0.2333, "x": 0, "y": 0 },
+					{ "time": 0.4666, "x": -0.99, "y": 0.1 },
+					{ "time": 0.7, "x": 0, "y": 0 },
+					{ "time": 0.9333, "x": -0.99, "y": 0.1 }
+				]
+			},
+			"lCalf": {
+				"rotate": [
+					{ "time": 0, "angle": 70.04 },
+					{ "time": 0.2333, "angle": 43.08 },
+					{ "time": 0.4666, "angle": 8.42 },
+					{ "time": 0.7, "angle": 0.55 },
+					{ "time": 0.9333, "angle": 70.04 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.93, "y": 0.93 },
+					{ "time": 0.4666, "x": 1.073, "y": 1.073 },
+					{ "time": 0.9333, "x": 0.93, "y": 0.93 }
+				]
+			},
+			"lThigh": {
+				"rotate": [
+					{ "time": 0, "angle": -8.4 },
+					{ "time": 0.2333, "angle": -31.42 },
+					{ "time": 0.4666, "angle": -27.73 },
+					{ "time": 0.7, "angle": 17.47 },
+					{ "time": 0.9333, "angle": -8.4 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.936, "y": 0.936 },
+					{ "time": 0.4666, "x": 1, "y": 1 },
+					{ "time": 0.9333, "x": 0.936, "y": 0.936 }
+				]
+			},
+			"hijab3": {
+				"rotate": [
+					{ "time": 0.2333, "angle": 1.85 },
+					{ "time": 0.4666, "angle": 2.43 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.843, "y": 1 },
+					{ "time": 0.2333, "x": 0.903, "y": 1 },
+					{ "time": 0.4666, "x": 0.841, "y": 1.119 },
+					{ "time": 0.9333, "x": 0.843, "y": 1 }
+				]
+			},
+			"body": {
+				"rotate": [
+					{ "time": 0, "angle": 10.84 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": -2.04 },
+					{ "time": 0.2333, "x": 0, "y": 0 },
+					{ "time": 0.4666, "x": 0, "y": -2.04 },
+					{ "time": 0.7, "x": 0, "y": 0 },
+					{ "time": 0.9333, "x": 0, "y": -2.04 }
+				]
+			},
+			"lArm": {
+				"rotate": [
+					{ "time": 0, "angle": -16.49 },
+					{ "time": 0.4666, "angle": 28.61 },
+					{ "time": 0.9333, "angle": -16.49 }
+				]
+			},
+			"hijab1": {
+				"rotate": [
+					{ "time": 0, "angle": 4.85 },
+					{ "time": 0.2333, "angle": 3.07 },
+					{ "time": 0.4666, "angle": 4.85 },
+					{ "time": 0.7, "angle": 3.07 },
+					{ "time": 0.9333, "angle": 4.85 }
+				]
+			},
+			"lForearm": {
+				"rotate": [
+					{ "time": 0, "angle": -72.87 },
+					{ "time": 0.4666, "angle": -64.27 },
+					{ "time": 0.9333, "angle": -72.87 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.075, "y": 1.075 },
+					{ "time": 0.4666, "x": 0.968, "y": 0.968 },
+					{ "time": 0.9333, "x": 1.075, "y": 1.075 }
+				]
+			},
+			"rCalf": {
+				"rotate": [
+					{ "time": 0, "angle": -5.58 },
+					{ "time": 0.2333, "angle": -0.25 },
+					{ "time": 0.4666, "angle": 55.3 },
+					{ "time": 0.7, "angle": 40.34 },
+					{ "time": 0.9333, "angle": -5.58 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.04, "y": 1.04 },
+					{ "time": 0.4666, "x": 1.001, "y": 1.001 },
+					{ "time": 0.9333, "x": 1.04, "y": 1.04 }
+				]
+			},
+			"rThigh": {
+				"rotate": [
+					{ "time": 0, "angle": 0.74 },
+					{ "time": 0.2333, "angle": 38.92 },
+					{ "time": 0.4666, "angle": 13.75 },
+					{ "time": 0.7, "angle": 0.74 },
+					{ "time": 0.9333, "angle": 0.74 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.037, "y": 1.037 },
+					{ "time": 0.4666, "x": 0.961, "y": 0.961 },
+					{ "time": 0.9333, "x": 1.037, "y": 1.037 }
+				]
+			},
+			"hijab5": {
+				"rotate": [
+					{ "time": 0, "angle": 20.25 },
+					{ "time": 0.2333, "angle": 3.53 },
+					{ "time": 0.4666, "angle": 20.25 },
+					{ "time": 0.7, "angle": 3.53 },
+					{ "time": 0.9333, "angle": 20.25 }
+				]
+			},
+			"lFoot": {
+				"rotate": [
+					{ "time": 0, "angle": 14.66 },
+					{ "time": 0.2333, "angle": -7.75 },
+					{ "time": 0.4666, "angle": 17.52 },
+					{ "time": 0.7, "angle": 0.65 },
+					{ "time": 0.9333, "angle": 14.66 }
+				]
+			},
+			"skirt": {
+				"rotate": [
+					{ "time": 0, "angle": -6.79 },
+					{ "time": 0.4666, "angle": -356.34 },
+					{ "time": 0.7, "angle": -1.68 },
+					{ "time": 0.9333, "angle": -6.79 }
+				]
+			},
+			"hijab2": {
+				"rotate": [
+					{ "time": 0, "angle": 4.22 },
+					{ "time": 0.2333, "angle": 3.47 },
+					{ "time": 0.4666, "angle": 5.51 },
+					{ "time": 0.7, "angle": 3.47 },
+					{ "time": 0.9333, "angle": 4.22 }
+				]
+			},
+			"rForearm": {
+				"rotate": [
+					{ "time": 0, "angle": -60.97, "curve": "stepped" },
+					{ "time": 0.9333, "angle": -60.97 }
+				]
+			},
+			"hip": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.2333, "x": 0, "y": 3.31 },
+					{ "time": 0.4666, "x": 0, "y": 0 },
+					{ "time": 0.7, "x": 0, "y": 3.31 },
+					{ "time": 0.9333, "x": 0, "y": 0 }
+				]
+			}
+		}
+	},
+	"walk": {
+		"bones": {
+			"rCalf": {
+				"rotate": [
+					{ "time": 0, "angle": -5.58 },
+					{ "time": 0.4666, "angle": 15.62 },
+					{ "time": 0.7, "angle": 40.34 },
+					{ "time": 0.9333, "angle": -5.58 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.04, "y": 1.04 },
+					{ "time": 0.4666, "x": 1.001, "y": 1.001 },
+					{ "time": 0.9333, "x": 1.04, "y": 1.04 }
+				]
+			},
+			"rThigh": {
+				"rotate": [
+					{ "time": 0, "angle": -2.16 },
+					{ "time": 0.4666, "angle": 28.37 },
+					{ "time": 0.7, "angle": 0.74 },
+					{ "time": 0.9333, "angle": -2.16 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.037, "y": 1.037 },
+					{ "time": 0.4666, "x": 0.961, "y": 0.961 },
+					{ "time": 0.9333, "x": 1.037, "y": 1.037 }
+				]
+			},
+			"rFoot": {
+				"rotate": [
+					{ "time": 0, "angle": 0.8 },
+					{ "time": 0.2333, "angle": -18.63 },
+					{ "time": 0.4666, "angle": -9.19 },
+					{ "time": 0.7, "angle": -8.99 },
+					{ "time": 0.9333, "angle": 0.8 }
+				]
+			},
+			"lThigh": {
+				"rotate": [
+					{ "time": 0, "angle": 9.81 },
+					{ "time": 0.2333, "angle": -31.42 },
+					{ "time": 0.4666, "angle": -27.73 },
+					{ "time": 0.7, "angle": -2 },
+					{ "time": 0.9333, "angle": 9.81 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.936, "y": 0.936 },
+					{ "time": 0.4666, "x": 1, "y": 1 },
+					{ "time": 0.9333, "x": 0.936, "y": 0.936 }
+				]
+			},
+			"lCalf": {
+				"rotate": [
+					{ "time": 0, "angle": 23.05 },
+					{ "time": 0.2333, "angle": 43.08 },
+					{ "time": 0.4666, "angle": 8.42 },
+					{ "time": 0.7, "angle": 0.55 },
+					{ "time": 0.9333, "angle": 23.05 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.93, "y": 0.93 },
+					{ "time": 0.4666, "x": 1.073, "y": 1.073 },
+					{ "time": 0.9333, "x": 0.93, "y": 0.93 }
+				]
+			},
+			"lFoot": {
+				"rotate": [
+					{ "time": 0, "angle": 7.43 },
+					{ "time": 0.2333, "angle": -7.75 },
+					{ "time": 0.4666, "angle": 17.52 },
+					{ "time": 0.7, "angle": -3.17 },
+					{ "time": 0.9333, "angle": 7.43 }
+				]
+			},
+			"lArm": {
+				"rotate": [
+					{ "time": 0, "angle": -12.29 },
+					{ "time": 0.4666, "angle": 14.99 },
+					{ "time": 0.9333, "angle": -12.29 }
+				]
+			},
+			"rArm": {
+				"rotate": [
+					{ "time": 0, "angle": -345.1 },
+					{ "time": 0.4666, "angle": -7.34 },
+					{ "time": 0.9333, "angle": -345.1 }
+				]
+			},
+			"lForearm": {
+				"rotate": [
+					{ "time": 0, "angle": -21.01 },
+					{ "time": 0.4666, "angle": 4.1 },
+					{ "time": 0.9333, "angle": -21.01 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.075, "y": 1.075 },
+					{ "time": 0.4666, "x": 0.968, "y": 0.968 },
+					{ "time": 0.9333, "x": 1.075, "y": 1.075 }
+				]
+			},
+			"body": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -2.04 },
+					{ "time": 0.2333, "x": 0, "y": 0 },
+					{ "time": 0.4666, "x": 0, "y": -2.04 },
+					{ "time": 0.7, "x": 0, "y": 0 },
+					{ "time": 0.9333, "x": 0, "y": -2.04 }
+				]
+			},
+			"skirt": {
+				"rotate": [
+					{ "time": 0, "angle": -6.79 },
+					{ "time": 0.4666, "angle": -356.34 },
+					{ "time": 0.7, "angle": -1.68 },
+					{ "time": 0.9333, "angle": -6.79 }
+				]
+			},
+			"hijab1": {
+				"rotate": [
+					{ "time": 0, "angle": 4.85 },
+					{ "time": 0.2333, "angle": 3.07 },
+					{ "time": 0.4666, "angle": 4.85 },
+					{ "time": 0.7, "angle": 3.07 },
+					{ "time": 0.9333, "angle": 4.85 }
+				]
+			},
+			"hijab2": {
+				"rotate": [
+					{ "time": 0, "angle": 4.22 },
+					{ "time": 0.2333, "angle": 3.47 },
+					{ "time": 0.4666, "angle": 5.51 },
+					{ "time": 0.7, "angle": 3.47 },
+					{ "time": 0.9333, "angle": 4.22 }
+				]
+			},
+			"hijab3": {
+				"rotate": [
+					{ "time": 0.2333, "angle": 1.85 },
+					{ "time": 0.4666, "angle": 2.43 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.843, "y": 1 },
+					{ "time": 0.2333, "x": 0.903, "y": 1 },
+					{ "time": 0.4666, "x": 0.841, "y": 1.119 },
+					{ "time": 0.9333, "x": 0.843, "y": 1 }
+				]
+			},
+			"hijab5": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.2333, "angle": -10.09 },
+					{
+						"time": 0.4666,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.7, "angle": -10.09 },
+					{ "time": 0.9333, "angle": 0 }
+				]
+			},
+			"head": {
+				"translate": [
+					{ "time": 0, "x": -0.99, "y": 0.1 },
+					{ "time": 0.2333, "x": 0, "y": 0 },
+					{ "time": 0.4666, "x": -0.99, "y": 0.1 },
+					{ "time": 0.7, "x": 0, "y": 0 },
+					{ "time": 0.9333, "x": -0.99, "y": 0.1 }
+				]
+			}
+		}
+	}
+}
+}
