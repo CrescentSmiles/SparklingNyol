@@ -1,6 +1,7 @@
 package pages 
 {
 	import char.instance.PlayerApril;
+	import char.instance.PlayerNyol;
 	import environment.EnvironmentLoader;
 	import environment.EnvironmentLocation;
 	import environment.IEnvironment;
@@ -24,15 +25,21 @@ package pages
 	{
 		/** assets list */
 		public static function loadAdditionalAssets():void {
-			Assets.loadSkeletonData("april1", PlayerApril.AtlasTexture1, PlayerApril.Atlas1, PlayerApril.Json1);
-			Assets.loadSkeletonData("april2", PlayerApril.AtlasTexture2, PlayerApril.Atlas2, PlayerApril.Json2);
+			//Assets.loadSkeletonData(PlayerApril.SKELETON_1_NAME, [PlayerApril.AtlasTexture1], PlayerApril.Atlas1, PlayerApril.Json1);
+			//Assets.loadSkeletonData(PlayerApril.SKELETON_2_NAME, [PlayerApril.AtlasTexture2], PlayerApril.Atlas2, PlayerApril.Json2);
+			var textureClasses:Object = new Object();
+			textureClasses[PlayerNyol.PATH_D3] = PlayerNyol.AtlasTexture3;
+			textureClasses[PlayerNyol.PATH_D32] = PlayerNyol.AtlasTexture32;
+			textureClasses[PlayerNyol.PATH_D33] = PlayerNyol.AtlasTexture33;
+			
+			Assets.loadSkeletonData(PlayerNyol.SKELETON_3_NAME, textureClasses, PlayerNyol.Atlas3, PlayerNyol.Json3);
 		}
 		
 		/** Class */
 		private var game:Game;
 		
 		/** GamePage layer */
-		private var hero:PlayerApril;
+		private var hero:PlayerNyol;
 		
 		public function GamePage(game:Game) 
 		{
@@ -53,7 +60,7 @@ package pages
 			/** instantiate */
 			changeEnvironment(EnvironmentLocation.JALAN1);
 			
-			hero = new PlayerApril();
+			hero = new PlayerNyol();
 			hero.x = 1420;
 			hero.y = 840;
 			
@@ -70,7 +77,7 @@ package pages
 			
 			if (currentEnvironment != null) {
 				currentEnvironment.destroy();
-				removeChild(Sprite(currentEnvironment));
+				removeChild(Sprite(currentEnvironment), true);
 				currentEnvironment = null;
 			}
 			

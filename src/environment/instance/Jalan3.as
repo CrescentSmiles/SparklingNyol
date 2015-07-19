@@ -5,6 +5,7 @@ package environment.instance
 	import environment.IEnvironment;
 	import pages.GamePage;
 	import feathers.controls.Button;
+	import starling.display.BlendMode;
 	import starling.display.Image;
 	import starling.display.Quad;
 	import starling.display.Sprite;
@@ -58,6 +59,9 @@ package environment.instance
 			/** initialize each object */
 			mcBg = new MovieClip(Assets.getTextures("Jalan3_1"));
 			
+			var filter:Quad = new Quad(1920, 1080, 0x330000);
+			filter.blendMode = BlendMode.ADD;
+			
 			pbJalan2 = new PortalButton();
 			pbJalan2.label = "slide to go";
 			pbJalan2.x = 1640;
@@ -70,6 +74,7 @@ package environment.instance
 			
 			/** addChild */
 			addChild(mcBg);
+			addChild(filter);
 			addChild(pbJalan2);
 		}
 		

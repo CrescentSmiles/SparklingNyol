@@ -1,0 +1,102 @@
+
+D3.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+D3/lFoot
+  rotate: false
+  xy: 2, 2
+  size: 295, 177
+  orig: 295, 177
+  offset: 0, 0
+  index: -1
+D3/lForearm
+  rotate: false
+  xy: 818, 680
+  size: 94, 120
+  orig: 94, 120
+  offset: 0, 0
+  index: -1
+D3/lHand
+  rotate: false
+  xy: 433, 76
+  size: 98, 103
+  orig: 98, 103
+  offset: 0, 0
+  index: -1
+D3/rFoot
+  rotate: true
+  xy: 818, 802
+  size: 205, 168
+  orig: 205, 168
+  offset: 0, 0
+  index: -1
+D3/rForearm
+  rotate: false
+  xy: 299, 26
+  size: 132, 153
+  orig: 132, 153
+  offset: 0, 0
+  index: -1
+D3/rHand
+  rotate: true
+  xy: 818, 580
+  size: 98, 86
+  orig: 98, 86
+  offset: 0, 0
+  index: -1
+D3/skirt
+  rotate: false
+  xy: 2, 181
+  size: 814, 826
+  orig: 814, 826
+  offset: 0, 0
+  index: -1
+
+D32.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+D3/basket
+  rotate: true
+  xy: 666, 364
+  size: 443, 318
+  orig: 443, 318
+  offset: 0, 0
+  index: -1
+D3/head
+  rotate: false
+  xy: 2, 29
+  size: 662, 778
+  orig: 662, 778
+  offset: 0, 0
+  index: -1
+D3/ribbon
+  rotate: false
+  xy: 666, 2
+  size: 322, 360
+  orig: 322, 360
+  offset: 0, 0
+  index: -1
+
+D33.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+D3/body
+  rotate: false
+  xy: 2, 2
+  size: 446, 733
+  orig: 446, 733
+  offset: 0, 0
+  index: -1
+D3/khimarTail
+  rotate: true
+  xy: 450, 130
+  size: 605, 515
+  orig: 605, 515
+  offset: 0, 0
+  index: -1

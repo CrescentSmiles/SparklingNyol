@@ -90,7 +90,7 @@ package
 			
 			if(currentState != null) {
 				currentState.destroy();
-				removeChild(Sprite(currentState));
+				removeChild(Sprite(currentState), true);
 				currentState = null;
 			}
 			

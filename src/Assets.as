@@ -61,12 +61,19 @@ package
 		//}=== endregion: AssetManager ===
 		
 		//{ === region: Spine Assets ===
-		public static function loadSkeletonData(name:String, textureClass:Class, atlasClass:Class, jsonClass:Class ):void {
+		public static function loadSkeletonData(name:String, textureClasses:Object, atlasClass:Class, jsonClass:Class ):void {
 			tryinit();
 			
 			if (name in mSkeletonData) {
-			}else{
-				var textureLoader:StarlingTextureLoader = new StarlingTextureLoader(new textureClass());
+			}else {
+				
+				// generate textureClasses's object
+				var texturesObject:Object = new Object();
+				for (var path:String in textureClasses){
+					texturesObject[path] = new (textureClasses[path] as Class)();
+				}
+				
+				var textureLoader:StarlingTextureLoader = new StarlingTextureLoader(texturesObject);
 				var spineAtlas:Atlas = new Atlas(new atlasClass(), textureLoader);
 				var attachmentLoader:AttachmentLoader = new AtlasAttachmentLoader(spineAtlas);
 				var json:SkeletonJson = new SkeletonJson(attachmentLoader);
