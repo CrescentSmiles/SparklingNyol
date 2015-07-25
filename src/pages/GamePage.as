@@ -2,6 +2,7 @@ package pages
 {
 	import char.instance.PlayerApril;
 	import char.instance.PlayerNyol;
+	import environment.Environment;
 	import environment.EnvironmentLoader;
 	import environment.EnvironmentLocation;
 	import environment.IEnvironment;
@@ -71,7 +72,7 @@ package pages
 		}
 		
 		/** EnvironmentState */
-		private var currentEnvironment:IEnvironment;
+		private var currentEnvironment:Environment;
 		public function changeEnvironment(location:int, withLoader:Boolean = true):void {
 			Config.log("changeEnvironment: " + location);
 			
@@ -117,8 +118,8 @@ package pages
 			if (touch) {
 				var touchPos:Point = touch.getLocation(this);
 				trace("onTouch "+touchPos);
-				trace("(" + touchPos.x + ", " + touchPos.y + ")");
 				hero.walkToPoint(touchPos.x, touchPos.y);
+				//currentEnvironment.
 			}else {
 				//trace("not TouchPhase.BEGAN");
 			}

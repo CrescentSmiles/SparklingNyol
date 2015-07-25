@@ -11,6 +11,7 @@ package
 	import flash.ui.MultitouchInputMode;
 	import net.hires.debug.Stats;
 	import starling.core.Starling;
+	import starling.events.ResizeEvent;
 	import starling.utils.RectangleUtil;
 	import starling.utils.ScaleMode;
 	
@@ -20,8 +21,8 @@ package
 	 */
 	public class Main extends Sprite 
 	{
-		private const StageWidth:int  = 1920;
-        private const StageHeight:int = 1080;
+		private const StageWidth:int  = 2400;
+        private const StageHeight:int = 1600;
 		
 		private var myStarling:Starling;
 
@@ -58,7 +59,22 @@ package
 			myStarling.antiAliasing = 1;
 			myStarling.start();
 			
+			//stage.addEventListener(Event.RESIZE, onResize);
+			
 			// new to AIR? please read *carefully* the readme.txt files!
+		}
+		
+		private function onResize(e:Event):void {
+			trace("resize: " + stage.stageWidth + "x" + stage.stageHeight);
+			var viewPort:Rectangle = RectangleUtil.fit(
+				new Rectangle(0, 0, StageWidth, StageHeight), 
+				new Rectangle(0, 0, stage.stageWidth, stage.stageHeight), 
+				ScaleMode.SHOW_ALL
+			);
+			Starling.current.viewPort = viewPort;
+ 
+			myStarling.stage.stageWidth = stage.stageWidth;
+			myStarling.stage.stageHeight = stage.stageHeight;
 		}
 		
 		private function deactivate(e:Event):void 

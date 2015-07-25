@@ -6,8 +6,8 @@
     <movie input="" />
     <movie path="bin\SparklingNyol.swf" />
     <movie fps="60" />
-    <movie width="1920" />
-    <movie height="1080" />
+    <movie width="2400" />
+    <movie height="1600" />
     <movie version="3" />
     <movie minorVersion="9" />
     <movie platform="AIR Mobile" />
